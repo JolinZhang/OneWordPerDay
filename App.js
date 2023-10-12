@@ -50,7 +50,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="First Grade" component={FirstGradeWordList} />
-        <Stack.Screen name="Word Details" component={WordDetails}/>
+        <Stack.Screen name="Word Details" component={WordDetails} options={({ route }) => ({ title: route.params.word.name })}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const FirstGradeWordList = ({navigation}) => {
-      const mapWord = words.map(word=> <li key={word.id} onClick={() => navigation.navigate("Word Details")}>{word.name}</li>)
+      const mapWord = words.map(word=> <li key={word.id} onClick={() => navigation.navigate("Word Details", {word})}>{word.name}</li>)
 
       return (
         <View style={styles.container} >
