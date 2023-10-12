@@ -1,7 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, StyleSheet } from 'react-native';
 
 const FirstGradeWordList = ({navigation}) => {
       const mapWord = words.map(word=> <li key={word.id} onClick={() => navigation.navigate("Word Details", {word})}>{word.name}</li>)

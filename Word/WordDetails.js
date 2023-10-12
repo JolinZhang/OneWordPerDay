@@ -1,12 +1,7 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-
-
-const WordDetail = ({route, navigation}) => {
+const WordDetail = ({route}) => {
     
     const word = route.params.word;
     return(
