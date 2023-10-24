@@ -12,7 +12,7 @@ const FirstGradeWordList = ({navigation}) => {
   }
     
   const words = [
-    {id: 0, name: 'age'},
+    {id: 0, name: 'apple'},
     {id: 1, name: 'appear'},
     {id: 2, name: 'artist'},
     {id: 3, name: 'autumn'},
